@@ -1,0 +1,44 @@
+package Ex02;
+
+//부모 클래스: Food (음식)
+class Food {
+	 private String name;       // 음식 이름
+	 private int calories;      // 칼로리 정보
+	
+	 // 생성자
+	 public Food(String name, int calories) {
+	     this.name = name;
+	     this.calories = calories;
+	 }
+	
+	// (문제1) 디폴트 생성자, 필드 초기화
+		 public Food() {  
+		     this("음식", 100);
+		     //this("", 0);
+		 }
+		
+	 
+	 
+	 // (문제2) getter와 setter
+	 public String getName() {
+	     return name;
+	 }
+	
+	 public void setName(String name) {
+	     this.name = name;
+	 }
+	
+	 public int getCalories() {
+	     return calories;
+	 }
+	
+	 public void setCalories(int calories) {
+	     this.calories = calories;
+	 }
+	
+	 // (문제3) 음식 정보 출력
+	 public void showInfo() {
+	     System.out.println("음식 이름: " + name);
+	     System.out.println("칼로리: " + calories + " kcal");
+	 }
+}
